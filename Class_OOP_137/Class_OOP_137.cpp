@@ -6,9 +6,16 @@ class Mahasiswa
 public:
 	string nim;
 	string nama;
-public: void cetak() {
-	cout << "NIM" << nim;
-	cout << "\nNama" << nama;
+public: 
+	void cetak() {
+		cout << "\nNIM" << nim;
+		cout << "\nNama" << nama;
+	}
+	void input() {
+		cout << "Masukan NIM : ";
+		cin >> nim;
+		cout << "Masukan Nama : ";
+		cin >> nama;
 	}
 };
 
@@ -18,9 +25,9 @@ private:
 	string kode;
 	string namaM;
 	int sks;
-public: 
+public:
 	void input() {
-		cout << "Masukan Kode Matakuliah ";
+		cout << "\nMasukan Kode Matakuliah ";
 		cin >> kode;
 		cout << "Masukan Nama Matakuliah ";
 		cin >> namaM;
@@ -28,9 +35,9 @@ public:
 		cin >> sks;
 	}
 	void tampil() {
-		cout << "Kode Matakuliah : " << kode;
-		cout << "Nama Matakuliah : " << namaM;
-		cout << "SKS : " << sks;
+		cout << "\nKode Matakuliah : " << kode;
+		cout << "\nNama Matakuliah : " << namaM;
+		cout << "\nSKS : " << sks;
 	}
 };
 
@@ -39,10 +46,7 @@ int main()
 	Mahasiswa mhs1;
 	Matakuliah mk;
 
-	cout << "Masukan NIM : ";
-	cin >> mhs1.nim;
-	cout << "Masukan Nama : ";
-	cin >> mhs1.nama;
+	mhs1.input();
 	mhs1.cetak();
 
 	mk.input();
