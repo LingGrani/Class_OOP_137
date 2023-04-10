@@ -11,6 +11,11 @@ public: void cetak() {
 	cout << "\nNama" << nama;
 	}
 };
+
+class Matakuliah
+{
+
+};
 int main()
 {
 
